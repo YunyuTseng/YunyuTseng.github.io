@@ -1,0 +1,51 @@
+.swiper-body {
+  position: relative;
+}
+
+.swiper-container.banner-swiper {
+  width: 100%;
+  height: 500px;
+  margin: 75px 0 0 0;
+}
+
+.swiper-container.video-swiper {
+  width: 100%;
+  height: 250px;
+  margin: 20px 0 0 0;
+}
+
+.banner-swiper .swiper-slide img {
+  width: 100%;
+}
+
+.video-swiper .swiper-slide iframe {
+  width: 100%;
+  height: 250px;
+  padding-bottom: 20px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+:root {
+  --swiper-theme-color: #ffffff;
+  --swiper-navigation-size: 44px;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+}

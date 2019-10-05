@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- css -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <!-- 加入swiper CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="select.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="mainbody container mx-auto">
+      <div class="top">
+        <a target="_blank" href="https://www.megabank.com.tw/index.asp">
+          <img src="pictures/Logo.svg" />
+         </a>
+        <hr class="top-line" />
+        <a class="top-content" href="#">
+          房貸
+          <span style="font-size: 20px">e</span>
+          把兆
+        </a>
+         <ul>
+          <li>
+            <a href="#">房屋估價</a>
+          </li>
+          <li>
+            <a href="#">房貸產品</a>
+          </li>
+          <li>
+            <a href="#">線上客服</a>
+          </li>
+          <li>
+            <a href="#">我要申請</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 輪播圖片部分 start -->
+      <div class="swiper-body">
+        <div class="swiper-container banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="pictures/001.jpg" /></div>
+            <div class="swiper-slide"><img src="pictures/002.jpg" /></div>
+            <div class="swiper-slide"><img src="pictures/003.jpg" /></div>
+            <div class="swiper-slide"><img src="pictures/004.jpg" /></div>
+            <div class="swiper-slide"><img src="pictures/006.jpg" /></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- 輪播圖片部分 end -->
+
+      <!-- 輪播影片部分 start -->
+      <div class="swiper-body">
+        <div class="swiper-container video-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe
+                class="border-none"
+                src="https://www.youtube.com/embed/KyDPphCnEjM"
+              ></iframe>
+            </div>
+
+            <div class="swiper-slide">
+              <iframe
+                class="border-none"
+                src="https://www.youtube.com/embed/ug5tYAO-IQk"
+              ></iframe>
+            </div>
+
+            <div class="swiper-slide">
+              <iframe
+                class="border-none"
+                src="https://www.youtube.com/embed/851iS-SWGfU"
+              ></iframe>
+            </div>
+
+            <div class="swiper-slide">
+              <iframe
+                class="border-none"
+                src="https://www.youtube.com/embed/851iS-SWGfU"
+              ></iframe>
+            </div>
+
+            <div class="swiper-slide">
+              <iframe
+                src="https://www.youtube.com/embed/ZXUuT6kpY6I"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="swiper-slide">
+              <iframe
+                src="https://www.youtube.com/embed/6oFzmSCTlQE"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- 輪播影片部分 end -->
+
+      <div class="content mx-auto">
+        <div class="location">
+          <p class="location-header header-color">
+            快速掌握市場行情 為您提供即時估價
+          </p>
+          <p class="location-content content-color">
+            請點選我的位置 或 輸入地址
+          </p>
+
+          <button class="location-button button" onclick="location">
+            <i class="fas fa-map-marker-alt fa-sm mr-1"></i>
+            我的位置
+          </button>
+
+          <!-- 選單部分 start -->
+          <div class="twzipcode">
+            <div
+              data-role="county"
+              data-label="縣市選擇"
+              data-name="country"
+              data-value="預設值"
+              data-css="country-css allcss"
+              data-hidden="隱藏的縣市"
+              data-required="1"
+            ></div>
+
+            <div
+              data-role="district"
+              data-label="區域選擇"
+              data-name="zone"
+              data-value="預設值"
+              data-css="zone-css allcss"
+              data-hidden="隱藏的縣市"
+              data-required="1"
+            ></div>
+
+            <input
+              type="text"
+              class="location-css"
+              id="addr"
+              name="addr"
+              aria-label="emailHelp"
+              placeholder="請輸入完整地址"
+              autocomplete="off"
+            />
+          </div>
+          <!-- 選單部分 end -->
+
+          <button class="search-button apply-button button" onclick="location">
+            查詢
+            <i class="fas fa-chevron-right icon-arrow"></i>
+          </button>
+        </div>
+
+        <hr class="line" />
+
+        <div class="apply">
+          <p class="apply-header header-color">我要申請</p>
+          <p class="apply-content content-color">
+            不論您是首次置產或是理財投資需求，
+            <br />
+            兆豐銀行都可因應您的財務需要，
+            <br />
+            提供適合您的房貸方案，為您實現「家」的美好。
+          </p>
+
+          <button class="apply-button apply-button1 button">
+            了解更多
+            <i class="fas fa-chevron-right icon-arrow"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="option-body d-flex">
+        <div class="option-excellence back-img d-flex dis-flex">
+          <div class="excellence-little-header">購屋 / 理財</div>
+          <p class="excellence-header font-color-header">卓越方案</p>
+          <br />
+          <p class="excellence-content font-color-content">
+            貸您購屋、修繕、周轉 easy
+          </p>
+          <button class="option-button apply-button1  button">
+            了解更多
+            <i class="fas fa-chevron-right icon-arrow"></i>
+          </button>
+        </div>
+
+        <div class="option-happiness back-img d-flex dis-flex">
+          <div class="excellence-little-header">留房不留債</div>
+          <p class="excellence-header font-color-header">幸福方案</p>
+          <br />
+          <p class="excellence-content font-color-content">
+            房貸結合壽險保障，讓您無後顧之憂
+          </p>
+          <button class="option-button button">
+            了解更多
+            <i class="fas fa-chevron-right icon-arrow"></i>
+          </button>
+        </div>
+
+        <div class="option-older back-img d-flex dis-flex">
+          <div class="excellence-little-header1">以防養老</div>
+          <br />
+          <p class="older-header font-color-header">歡喜樂活方案</p>
+          <br />
+          <p class="older-content font-color-content">
+            讓您的房子成為奉養您的兒子
+          </p>
+          <button class="option-button1 button">
+            了解更多
+            <i class="fas fa-chevron-right icon-arrow"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <!-- 包footer-content -->
+      <div class="mainbody footer-content">
+        <ul>
+          <li>
+            <a href="" target="_blank">服務據點</a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">聯絡信箱</a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">隱私權保護聲明</a>
+          </li>
+
+          <li>
+            <a href="" target="_blank">Cookie聲明</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">引用本行資訊說明</a>
+          </li>
+        </ul>
+
+        <span>
+          <i class="fas fa-phone-alt icon-phone"></i>
+          24小時服務專線：0800-016168
+        </span>
+      </div>
+    </span>
+      <hr class="footer-line" />
+
+      <div class="company mainbody">
+        兆豐國際商業銀行股份有限公司 版權所有
+      </div>
+    </div>
+  </div>
+
+
+    <!-- 加入 swiper js CDN -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="twzipcode.js"></script>
+    <script>
+      //圖片輪播
+      var swiper = new Swiper('.swiper-container.banner-swiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.banner-swiper .swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.banner-swiper .swiper-button-next',
+          prevEl: '.banner-swiper .swiper-button-prev'
+        }
+      });
+
+      //影片輪播
+      var swiper = new Swiper('.swiper-container.video-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.video-swiper .swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.video-swiper .swiper-button-next',
+          prevEl: '.video-swiper .swiper-button-prev'
+        }
+      });
+
+      //下拉式選單
+      var twzipcode = new TWzipcode('.twzipcode', {
+        option: 'value',
+        option: 'value'
+      });
+    </script>
+  </body>
+</html>

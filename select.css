@@ -1,0 +1,47 @@
+.box {
+  margin: 20px 0 0 70px;
+  position: relative;
+  width: 200px;
+}
+
+.box select {
+  background-color: #fff;
+  color: #888888;
+  font-family: '微軟正黑體';
+  position: relative;
+  padding: 12px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px #ccc solid;
+  font-size: 16px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: '';
+  background-image: url(./pictures/arrow-down.svg);
+  background-size: 16px 6px;
+  background-repeat: no-repeat;
+  /* background-position: 10px 18px; */
+  color: #666;
+  position: absolute;
+  right: -8px;
+  top: 22px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(225, 225, 225, 0.5);
+  pointer-events: none;
+  z-index: 999;
+}
+
+.box:hover::bofore {
+  color: rgba(225, 225, 225, 0.6);
+  background-color: rgba(225, 225, 225, 0.2);
+}
+.box select option {
+  padding: 30px;
+}
