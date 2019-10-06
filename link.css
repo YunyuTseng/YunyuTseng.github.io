@@ -1,0 +1,96 @@
+.top-right ul {
+  list-style-type: none;
+  display: flex;
+  padding-inline-start: none;
+}
+
+.top-right ul a {
+  text-decoration: none;
+  color: #a17d58;
+  font-size: 16px;
+}
+
+.top-right ul li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.top-right .outer-header a:hover {
+  color: #b65138;
+  border-bottom: 2px #b65138 solid;
+  padding-bottom: 8px;
+}
+
+.house-all {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.product {
+  display: none;
+}
+.house-all{
+  position: relative;
+}
+
+.house-all:hover .product{
+  width: 650px;
+  height: 320px;
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  left: -330px;
+}
+
+.ul-line {
+  height: 250px;
+  margin-top: 40px;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: 1px #ccc solid;
+}
+
+.top-right .ul-content {
+  display: block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.li-content {
+  position: absolute;
+  padding-top: 20px;
+}
+.li-content li {
+  padding-top: 20px;
+}
+.li-content li a {
+  color: #555555;
+  font-size: 14px;
+}
+
+.icon-arrow-down {
+  color: #a17d58;
+  padding-left: 5px;
+}
+
+.icon-arrow-up {
+  display: none;
+}
+
+.top-right ul a:hover .icon-arrow-up {
+  color: #b65138;
+  padding-left: 5px;
+  display: inline;
+}
+
+.top-right ul a:hover .icon-arrow-down {
+  color: #b65138;
+  display: none;
+}
+
+.top-right ul a:hover::after {
+  display: block;
+}

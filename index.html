@@ -21,35 +21,71 @@
     <link rel="stylesheet" href="all.css" />
     <link rel="stylesheet" href="swiper.css" />
     <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="link.css" />
     <title>Document</title>
   </head>
 
   <body>
     <div class="mainbody container mx-auto">
       <div class="top">
-        <a target="_blank" href="https://www.megabank.com.tw/index.asp">
-          <img src="pictures/Logo.svg" />
-         </a>
-        <hr class="top-line" />
-        <a class="top-content" href="#">
-          房貸
-          <span style="font-size: 20px">e</span>
-          把兆
-        </a>
-         <ul>
-          <li>
-            <a href="#">房屋估價</a>
-          </li>
-          <li>
-            <a href="#">房貸產品</a>
-          </li>
-          <li>
-            <a href="#">線上客服</a>
-          </li>
-          <li>
-            <a href="#">我要申請</a>
-          </li>
-        </ul>
+        <div class="top-container">
+          <div class="top-left">
+            <a target="_blank" href="https://www.megabank.com.tw/index.asp">
+              <img src="pictures/Logo.svg" />
+            </a>
+            <hr class="top-line" />
+
+            <a class="top-content" href="#">
+              房貸
+              <span style="font-size: 20px">e</span>
+              把兆
+            </a>
+          </div>
+
+          <div class="top-right">
+            <ul>
+              <li class="outer-header"><a href="#">房屋估價</a></li>
+              <li class="house-all outer-header">
+                <a href="#" class="house">
+                  房貸產品
+                  <i class="fas fa-chevron-down icon-arrow-down"></i>
+                  <i class="fas fa-chevron-up icon-arrow-up"></i></a>
+                <div class="product">
+                  <ul class="ul-content">
+                    <a href="#">我要購置房屋</a>
+                    <div class="li-content">
+                    <li><a href="#">卓越方案</a></li>
+                    <li><a href="#">幸福方案</a></li>
+                    <li><a href="#">公教及菁英方案</a></li>
+                    <li><a href="#">優質房仲合作方案</a></li>
+                    <li><a href="#">一價到底方案</a></li>
+                  </div>
+                  </ul>
+                  <hr class="ul-line">
+                  <ul class="ul-content">
+                    <a href="#">我要投資周轉</a>
+                    <div class="li-content">
+                    <li><a href="#">卓越方案</a></li>
+                    <li><a href="#">幸福方案</a></li>
+                    <li><a href="#">公教及菁英方案</a></li>
+                    <li><a href="#">一價到底方案</a></li>
+                    <li><a href="#">行家理財隨借隨還</a></li>
+                  </div>
+                  </ul> 
+                  <hr class="ul-line">
+                  <ul class="ul-content">
+                    <a href="#">我要以房養老</a>
+                    <div class="li-content">
+                    <li><a href="#">歡喜樂活方案</a></li>
+                  </div>
+                  </ul>
+                </div>
+              </li>
+              <li class="outer-header"><a href="#">線上客服</a></li>
+              <li class="outer-header"><a href="#">我要申請</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- 輪播圖片部分 start -->
@@ -274,15 +310,12 @@
           24小時服務專線：0800-016168
         </span>
       </div>
-    </span>
       <hr class="footer-line" />
 
       <div class="company mainbody">
         兆豐國際商業銀行股份有限公司 版權所有
       </div>
     </div>
-  </div>
-
 
     <!-- 加入 swiper js CDN -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
