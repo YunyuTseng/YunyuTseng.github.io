@@ -1,0 +1,38 @@
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+.scroll {
+  position: fixed;
+  padding: 20px;
+  right: 30px;
+  bottom: 30px;
+  background: #a17d58;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.scroll:hover {
+  background: #cfa85c;
+  transition: 0.2s;
+}
+.scroll:hover .fa {
+  padding-top: -10px;
+}
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.icon {
+  color: #fff;
+}

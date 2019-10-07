@@ -14,10 +14,14 @@
   margin-right: 25px;
 }
 
-.top-right .outer-header a:hover {
+.product .ul-content a:hover {
   color: #b65138;
   border-bottom: 2px #b65138 solid;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
+}
+
+.li-content a:hover {
+  color: #b65138;
 }
 
 .house-all {
@@ -28,11 +32,11 @@
 .product {
   display: none;
 }
-.house-all{
+.house-all {
   position: relative;
 }
 
-.house-all:hover .product{
+.house-all:hover .product {
   width: 650px;
   height: 320px;
   display: flex;
