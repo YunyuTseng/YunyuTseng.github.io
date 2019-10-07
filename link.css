@@ -17,23 +17,13 @@
   border-bottom: 2px;
 }
 
-.top-right .a-content:hover{
+.top-right .a-content:hover {
   border-bottom: 2px #b65138 solid;
 }
 
 .top-right ul li:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 40px;
 }
-
-/* .product .ul-content a:hover {
-  color: #b65138;
-  border-bottom: 2px #b65138 solid;
-  padding-bottom: 5px;
-} */
-
-/* .li-content a:hover {
-  color: #b65138;
-} */
 
 .house-all {
   display: inline-block;
@@ -69,8 +59,8 @@
 .top-right .ul-content {
   display: block;
   padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 35px;
+  padding-right: 45px;
 }
 
 .li-content {
