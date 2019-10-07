@@ -10,19 +10,30 @@
   font-size: 16px;
 }
 
+.top-right ul a:hover {
+  text-decoration: none;
+  color: #b65138;
+  padding-bottom: 3px;
+  border-bottom: 2px;
+}
+
+.top-right .a-content:hover{
+  border-bottom: 2px #b65138 solid;
+}
+
 .top-right ul li:not(:last-child) {
   margin-right: 25px;
 }
 
-.product .ul-content a:hover {
+/* .product .ul-content a:hover {
   color: #b65138;
   border-bottom: 2px #b65138 solid;
   padding-bottom: 5px;
-}
+} */
 
-.li-content a:hover {
+/* .li-content a:hover {
   color: #b65138;
-}
+} */
 
 .house-all {
   display: inline-block;
@@ -42,8 +53,7 @@
   display: flex;
   position: absolute;
   background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  top: 30px;
   left: -330px;
 }
 

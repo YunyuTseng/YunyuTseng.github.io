@@ -45,16 +45,18 @@
 
           <div class="top-right">
             <ul>
-              <li class="outer-header"><a href="#">房屋估價</a></li>
+              <li class="outer-header">
+                <a class="a-content" href="#">房屋估價</a>
+              </li>
               <li class="house-all outer-header">
-                <a href="#" class="house">
+                <a class="a-content" href="#" class="house">
                   房貸產品
                   <i class="fas fa-chevron-down icon-arrow-down"></i>
                   <i class="fas fa-chevron-up icon-arrow-up"></i>
                 </a>
                 <div class="product">
                   <ul class="ul-content">
-                    <a href="#">我要購置房屋</a>
+                    <a class="a-content" href="#">我要購置房屋</a>
                     <div class="li-content">
                       <li><a href="#">卓越方案</a></li>
                       <li><a href="#">幸福方案</a></li>
@@ -65,7 +67,7 @@
                   </ul>
                   <hr class="ul-line" />
                   <ul class="ul-content">
-                    <a href="#">我要投資周轉</a>
+                    <a class="a-content" href="#">我要投資周轉</a>
                     <div class="li-content">
                       <li><a href="#">卓越方案</a></li>
                       <li><a href="#">幸福方案</a></li>
@@ -76,15 +78,19 @@
                   </ul>
                   <hr class="ul-line" />
                   <ul class="ul-content">
-                    <a href="#">我要以房養老</a>
+                    <a class="a-content" href="#">我要以房養老</a>
                     <div class="li-content">
                       <li><a href="#">歡喜樂活方案</a></li>
                     </div>
                   </ul>
                 </div>
               </li>
-              <li class="outer-header"><a href="#">線上客服</a></li>
-              <li class="outer-header"><a href="#">我要申請</a></li>
+              <li class="outer-header">
+                <a class="a-content" href="#">線上客服</a>
+              </li>
+              <li class="outer-header">
+                <a class="a-content" href="#">我要申請</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -103,6 +109,7 @@
             <div class="swiper-slide"><img src="pictures/003.jpg" /></div>
             <div class="swiper-slide"><img src="pictures/004.jpg" /></div>
             <div class="swiper-slide"><img src="pictures/006.jpg" /></div>
+            <div class="swiper-slide"><img src="pictures/007.jpg" /></div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
@@ -336,7 +343,7 @@
         centeredSlides: true,
         loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false
         },
         pagination: {
@@ -348,7 +355,8 @@
           prevEl: '.banner-swiper .swiper-button-prev'
         }
       });
-
+    </script>
+    <script>
       //影片輪播
       var swiper = new Swiper('.swiper-container.video-swiper', {
         slidesPerView: 3,
