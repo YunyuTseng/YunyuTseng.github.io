@@ -9,6 +9,7 @@ var app = new Vue({
     }
   },
   computed: {
+    // 取得目前所選月份的總天數
     getDays() {
       const { year, month } = this.dateOfBirth;
 
@@ -28,6 +29,7 @@ var app = new Vue({
 
       return result;
     },
+    // 取得所選月份總天數
     daysInMonth(year, month) {
       return new Date(year, month, 0).getDate();
     }
