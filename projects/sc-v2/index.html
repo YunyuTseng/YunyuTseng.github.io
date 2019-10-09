@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- Css Style -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app" class="container mainbody p-4">
+      <h1 class="title bold my-4 pl-3">請輸入身份資料</h1>
+
+      <form>
+        
+        <!-- 中文姓名 -->
+        <div class="form-group">
+          <label for="nameInput">中文姓名</label>
+          <input
+            id="nameInput"
+            class="form-control"
+            type="text"
+            name="name"
+            placeholder="王小明"
+          />
+        </div>
+
+        <!-- 英文姓名 -->
+        <div class="form-group">
+          <label for="englishNameInput">英文姓名</label>
+          <input
+            id="englishNameInput"
+            class="form-control"
+            type="text"
+            name="englishName"
+            placeholder="Wang Xiao Ming"
+          />
+        </div>
+
+        <!-- 身份證字號 -->
+        <div class="form-group">
+          <label for="inputIdentification">身份證字號</label>
+          <input
+            id="inputIdentification"
+            class="form-control"
+            type="text"
+            name="identification"
+            placeholder="A123456789"
+          />
+        </div>
+
+        <!-- 出生年月日 -->
+        <div class="form-group">
+          <label for="dateOfBirthInput">出生年月日</label>
+
+          <div class="form-row">
+
+            <!-- 出生日期 年 -->
+            <div class="col-4 d-flex align-items-center">
+              <select id="birthYearInput" class="custom-select" v-model="dateOfBirth.year">
+                <option v-for="year in yearList(1950)">
+                  {{ year }}
+                </option>
+              </select>
+              <label class="mb-0 ml-2" for="birthYearInput">年</label>
+            </div>
+
+            <!-- 出生日期 月 -->
+            <div class="col-4 d-flex align-items-center">
+              <select id="birthMonthInput" class="custom-select" v-model="dateOfBirth.month">
+                <option v-for="month in 12">
+                  {{ month < 10 ? '0' + month : month }}
+                </option>
+              </select>
+              <label class="mb-0 ml-2" for="birthMonthInput">月</label>
+            </div>
+
+            <!-- 出生日期 日 -->
+            <div class="col-4 d-flex align-items-center">
+              <select id="birthDateInput" class="custom-select" v-model="dateOfBirth.date">
+                <option v-for="date in getDays">
+                  {{ date < 10 ? '0' + date : date }}
+                </option>
+              </select>
+              <label class="mb-0 ml-2" for="birthDateInput">日</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 電子郵件信箱 -->
+        <div class="form-group">
+          <label for="emailInput">電子郵件信箱</label>
+          <input
+            id="emailInput"
+            class="form-control"
+            type="text"
+            name="email"
+            placeholder="abc@sc.com"
+          />
+        </div>
+
+        <!-- 行動電話 -->
+        <div class="form-group">
+          <label for="phoneInput">行動電話</label>
+          <input
+            id="phoneInput"
+            class="form-control"
+            type="text"
+            name="姓名"
+            placeholder="0900-123-456"
+          />
+        </div>
+      </form>
+    </div>
+
+    <!-- JS Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
