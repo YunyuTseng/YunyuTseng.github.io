@@ -72,7 +72,7 @@ select {
 }
 
 select.minimal {
-  background-image: url(/projects/sc/image/arrow.svg);
+  background-image: url(/image/arrow.svg);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
   background-size: 10px 10px, 1px 1.5em;
   background-repeat: no-repeat;
