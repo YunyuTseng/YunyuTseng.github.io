@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app" class="mainbody">
+      <div class="row justify-content-start text-left no-gutters">
+        <div class="row col-12 no-gutters">
+          <h4><b>請輸入身分資料</b></h4>
+          <div class="row col-12 no-gutters">
+            <form>
+              <label for="chinese-name-input">中文姓名</label>
+              <input id="chinese-name-input" class="form-input" type="text" name="chinese-name" placeholder="請輸入姓名" />
+              <label for="english-name-input">英文姓名</label>
+              <input id="english-name-input" class="form-input" type="text" name="english-name" placeholder="王小明" />
+              <label for="number-input">身份證字號</label>
+              <input id="number-input" class="form-input" type="text" name="number-input" placeholder="Wang Xiao Ming" />
+              <label for="birth-input">出生年月日</label>
+              <select class="minimal">
+                <option v-for="form in years">
+                  {{ form.text }}
+                </option>
+              </select>
+              年
+              <select>
+                <option v-for="month in 12">
+                  {{ month }}
+                </option>
+              </select>
+              月
+              <select>
+                <option v-for="day in 31">
+                  {{ day }}
+                </option>
+              </select>
+              日
+              <label for="email-input">電子郵件信箱</label>
+              <input id="email-input" class="form-input" type="text" name="email-input" placeholder="A123456789" />
+              <label for="phonenumber-input">行動電話</label>
+              <input id="phonenumber-input" class="form-input" type="text" name="phonenumber-input" placeholder="0900-123-456" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
