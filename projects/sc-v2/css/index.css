@@ -1,3 +1,7 @@
+[v-cloak] {
+  display: none;
+}
+
 .mainbody {
   font-family: 'Noto Sans TC', sans-serif;
   border: 1px solid lightgray;
