@@ -26,7 +26,6 @@
       <h1 class="title font-weight-bold my-4 pl-3">請輸入身份資料</h1>
 
       <form>
-
         <!-- 中文姓名 -->
         <div class="form-group">
           <label for="nameInput">中文姓名</label>
@@ -65,38 +64,52 @@
 
         <!-- 出生年月日 -->
         <div class="form-group">
-          <label for="dateOfBirthInput">出生年月日</label>
+          <label for="yearOfBirthInput">出生年月日</label>
 
           <div class="form-row">
-
             <!-- 出生日期 年 -->
             <div class="col-4 d-flex align-items-center">
-              <select id="birthYearInput" class="custom-select" name="yearOfBirth" v-model="dateOfBirth.year">
+              <select
+                id="yearOfBirthInput"
+                class="custom-select"
+                name="yearOfBirth"
+                v-model="dateOfBirth.year"
+              >
                 <option v-for="year in yearList(1950)">
                   {{ year }}
                 </option>
               </select>
-              <label class="mb-0 ml-2" for="birthYearInput">年</label>
+              <label class="mb-0 ml-2" for="yearOfBirthInput">年</label>
             </div>
 
             <!-- 出生日期 月 -->
             <div class="col-4 d-flex align-items-center">
-              <select id="birthMonthInput" class="custom-select" name="monthOfBirth" v-model="dateOfBirth.month">
+              <select
+                id="monthOfBirthInput"
+                class="custom-select"
+                name="monthOfBirth"
+                v-model="dateOfBirth.month"
+              >
                 <option v-for="month in 12">
                   {{ month < 10 ? '0' + month : month }}
                 </option>
               </select>
-              <label class="mb-0 ml-2" for="birthMonthInput">月</label>
+              <label class="mb-0 ml-2" for="monthOfBirthInput">月</label>
             </div>
 
             <!-- 出生日期 日 -->
             <div class="col-4 d-flex align-items-center">
-              <select id="birthDateInput" class="custom-select" name="dateOfBirth" v-model="dateOfBirth.date">
+              <select
+                id="dateOfBirthInput"
+                class="custom-select"
+                name="dateOfBirth"
+                v-model="dateOfBirth.date"
+              >
                 <option v-for="date in getDays">
                   {{ date < 10 ? '0' + date : date }}
                 </option>
               </select>
-              <label class="mb-0 ml-2" for="birthDateInput">日</label>
+              <label class="mb-0 ml-2" for="dateOfBirthInput">日</label>
             </div>
           </div>
         </div>
@@ -124,6 +137,7 @@
             placeholder="0900-123-456"
           />
         </div>
+
       </form>
     </div>
 
