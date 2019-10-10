@@ -2,8 +2,11 @@
   display: none;
 }
 
-.mainbody {
+body {
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+.mainbody {
   border: 1px solid lightgray;
   max-width: 380px;
 }
@@ -21,7 +24,7 @@
   content: '';
   display: inline-block;
   height: 1.5rem;
-  border-left: 0.25rem solid #0F8EE8;
+  border-left: 0.25rem solid #0f8ee8;
 
   position: absolute;
   left: 0;
