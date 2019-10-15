@@ -1,53 +1,40 @@
 .mainbody {
   font-family: 'Noto Sans TC', sans-serif;
+  border: 1px #000 solid;
+}
+
+h6 {
+  padding-top: 18px;
+}
+
+h4 {
+  padding-left: 20px;
 }
 
 .top {
   background-color: #fff;
   border: 1px #000 solid;
 }
-.top-line {
+
+.blue-line {
+  position: absolute;
   height: 15px;
   width: 2px;
+  padding-top: 15px;
   border-top: none;
   border-bottom: none;
   border-right: 3px #31a1ef solid;
   border-left: none;
 }
-h6 {
-  padding-top: 18px;
-}
+
 .form-input {
   border: 1px #ccc solid;
   border-radius: 5px;
 }
-.top-line {
-  height: 15px;
-  width: 2px;
-  border-top: none;
-  border-bottom: none;
-  border-right: 3px #31a1ef solid;
-  border-left: none;
-}
-h6 {
-  padding-top: 18px;
-}
-.form-input {
-  border: 1px #888 solid;
-  border-radius: 5px;
-  padding-left: 5px;
-}
-
 ::placeholder {
   color: #ccc;
   padding-left: 1px;
 }
-
-/* select {
-  background: url(./image/arrow.svg) !important;
-  border-radius: 5px;
-  border: 1px #888 solid;
-} */
 
 label {
   display: block;
@@ -56,14 +43,15 @@ label {
 select {
   background-color: white;
   border-radius: 4px;
-  display: inline-block;
+  border-color: #ccc;
+  display: inline;
   font: inherit;
-  line-height: 1.5em;
-  padding: 0.5em 3.5em 0.5em 1em;
-
+  padding-top: 5px;
+  padding-buttom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* reset */
-
-  margin: 0;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -71,11 +59,36 @@ select {
   -moz-appearance: none;
 }
 
-select.minimal {
+.arrow {
   background-image: url(../image/arrow.svg);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-  background-size: 10px 10px, 1px 1.5em;
+  background-position: 85%;
+  background-size: 10px;
   background-repeat: no-repeat;
-  padding-top: 2px;
-  padding-bottom: 2px;
+}
+
+.years {
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+.mon-day-pad {
+  padding-left: 18px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+.go-next-button {
+  height: 45px;
+  margin: 10px 18px 20px 0;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #05a5e3;
+}
+
+.go-next-button:hover {
+  background: #0eccd2;
+  transition: 0.5s;
 }

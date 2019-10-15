@@ -7,66 +7,113 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bs-stepper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="app" class="mainbody">
-      <div class="row justify-content-start text-left no-gutters">
-        <div class="row col-12 no-gutters">
-          <h4><b>請輸入身分資料</b></h4>
-          <div class="row col-12 no-gutters">
-            <form>
-              <label for="chinese-name-input">中文姓名</label>
-              <input id="chinese-name-input" class="form-input" type="text" name="chinese-name" placeholder="請輸入姓名" />
-              <label for="english-name-input">英文姓名</label>
-              <input id="english-name-input" class="form-input" type="text" name="english-name" placeholder="王小明" />
-              <label for="number-input">身份證字號</label>
-              <input id="number-input" class="form-input" type="text" name="number-input" placeholder="Wang Xiao Ming" />
-              <label for="birth-input">出生年月日</label>
-              <select class="minimal">
-                <option v-for="form in years">
-                  {{ form.text }}
-                </option>
-              </select>
-              年
-              <select>
-                <option v-for="month in 12">
-                  {{ month }}
-                </option>
-              </select>
-              月
-              <select>
-                <option v-for="day in 31">
-                  {{ day }}
-                </option>
-              </select>
-              日
-              <label for="email-input">電子郵件信箱</label>
-              <input id="email-input" class="form-input" type="text" name="email-input" placeholder="A123456789" />
-              <label for="phonenumber-input">行動電話</label>
-              <input id="phonenumber-input" class="form-input" type="text" name="phonenumber-input" placeholder="0900-123-456" />
-            </form>
+    <div id="app" class="mainbody container ">
+      <div class="container1">
+        <div class="bs-stepper">
+          <div class="bs-stepper-header" role="tablist">
+            <!-- your steps here -->
+            <div class="step" data-target="#logins-part">
+              <span class="bs-stepper-circle step-img step-content1 step-1"></span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-target="#information-part">
+              <span class="bs-stepper-circle step-img step-content2 step-2"></span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" data-target="#information-part">
+              <span class="bs-stepper-circle step-img step-content3 step-3"></span>
+            </div>
+          </div>
+          <div class="bs-stepper-content">
+            <!-- your steps content here -->
+            <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger"></div>
+            <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger"></div>
           </div>
         </div>
       </div>
-    </div>
+      <hr class="blue-line" />
+      <h4 class="font-weight-bold my-3">請輸入身分資料</h4>
 
+      <form>
+        <!-- 中文姓名 -->
+        <div class="form-group">
+          <label for="nameInput">中文姓名</label>
+          <input id="nameInput" class="form-control" type="text" name="name" placeholder="王小明" />
+        </div>
+
+        <div class="form-group">
+          <label for="english-name-input">英文姓名</label>
+          <input id="english-name-input" class="form-control" type="text" name="english-name" placeholder="王小明" />
+        </div>
+        <div class="form-group">
+          <label for="number-input">身份證字號</label>
+          <input id="number-input" class="form-control" type="text" name="number-input" placeholder="Wang Xiao Ming" />
+        </div>
+
+        <div class="form-group">
+          <label for="birth-input">出生年月日</label>
+          <select class="years arrow">
+            <option v-for="form in years">
+              {{ year.text }}
+            </option>
+          </select>
+          年
+          <select class="mon-day-pad arrow">
+            <option v-for="month in 12">
+              {{ month }}
+            </option>
+          </select>
+          月
+          <select class="mon-day-pad arrow">
+            <option v-for="day in 31">
+              {{ day }}
+            </option>
+          </select>
+          日
+        </div>
+
+        <div class="form-group">
+          <label for="email-input">電子郵件信箱</label>
+          <input id="email-input" class="form-control" type="text" name="email-input" placeholder="A123456789" />
+        </div>
+
+        <div class="form-group">
+          <label for="phonenumber-input">行動電話</label>
+          <input id="phonenumber-input" class="form-control" type="text" name="phonenumber-input" placeholder="0900-123-456" />
+        </div>
+      </form>
+
+      <div class="row justify-content-end">
+        <button class="go-next-button col-5 col-sm-3 col-md-3">下一步</button>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/year.js"></script>
+    <script src="js/day.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
   </body>

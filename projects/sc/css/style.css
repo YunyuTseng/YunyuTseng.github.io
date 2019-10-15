@@ -1,0 +1,105 @@
+.container1 {
+  padding: 2rem;
+}
+.bs-stepper .step-trigger:focus {
+  color: none;
+}
+
+.bs-stepper .step-trigger:hover {
+  background-color: transparent;
+}
+
+.bs-stepper-circle {
+  margin: 0 auto;
+}
+.step {
+  opacity: 0.5;
+}
+
+.step:hover {
+  opacity: 1;
+}
+
+.step-img {
+  background-position: 50%;
+  width: 32px;
+  background-size: 2em;
+  background-repeat: no-repeat;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.step-img::before {
+  content: '';
+  color: #000;
+  position: absolute;
+  bottom: -30px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 200 !important;
+  color: #777;
+}
+
+.step-1 {
+  background-image: url(../image/user.svg);
+}
+.step-content1::before {
+  content: '身分確認';
+}
+
+.step-2 {
+  background-image: url(../image/step2.svg);
+}
+
+.step-content2::before {
+  content: '填寫申請';
+}
+
+.step-img:hover::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+.step-3 {
+  background-image: url(../image/step3.svg);
+}
+
+.step-content3::before {
+  content: '確認撥款';
+}
+
+.bs-stepper-line,
+.bs-stepper .line {
+  position: relative;
+  margin: 0 auto;
+  z-index: -2;
+}
+
+.bs-stepper-circle {
+  background-color: transparent;
+}
+.bs-stepper-label {
+  flex-direction: column;
+}
+
+.bs-stepper .step-trigger {
+  flex-direction: column;
+}
+
+.bs-stepper .step-trigger:focus {
+  color: #777;
+  outline: none;
+}
+.bs-stepper .step-trigger {
+  padding: 0;
+}
