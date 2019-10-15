@@ -1,0 +1,95 @@
+body {
+  /* height: 100vh; */
+  background: linear-gradient(#27ecf3, #2ab3e1);
+}
+.mainbody {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 15px;
+}
+
+.pi {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+.top-word {
+  color: #fff;
+  font-size: 28px;
+  padding-left: 10px;
+}
+.line {
+  width: 100%;
+  border: 1px #fff solid;
+}
+.box1 {
+  padding-top: 50px;
+  text-align: center;
+}
+.content {
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 3px #888;
+}
+
+.hi {
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 0 4px 4px #777;
+}
+.content-body {
+  text-align: center;
+  margin: 30px 0 0 0;
+  border: 2px #fff solid;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.money {
+  color: #fffa81;
+  font-weight: 800;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 0 2px 4px #888;
+  letter-spacing: 3px;
+}
+
+.symbol {
+  color: #fffa81;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 0 2px 4px #888;
+}
+.button-body {
+  text-align: center;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  color: #3a8fc6;
+  margin: 20px 0 0 0;
+  box-shadow: 0 1px 4px #999;
+}
+
+.button:hover {
+  background-color: #3a8fc6;
+  color: #fff;
+  transition: 1s;
+  box-shadow: none;
+}
+.connection {
+  text-align: center;
+}
+a {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 12px;
+}
+
+a:hover {
+  color: #fff;
+}
